@@ -18,11 +18,11 @@
 Why?
 ---
 Dynamic delivery is great, it can contribute a lot towards saving space as well as data for users, however, it has the following drawbacks:
-* **Restrictive**: it can only be used with devices where the Play Store app is installed, moreover, the bundle to use it with has to
+* **Restrictive**: it can only be used with devices where the Play Store app is installed, moreover, to use it with a bundle it with has to
 be uploaded to the Google Play store. This makes it impossible to use dynamic delivery for internally distributed builds before they are promoted to Google Play.
 
 * **Not a great developer experience**: since bundles have to be uploaded to Google Play, the iteration speed during development is slow. 
-It also requires prevents you from testing dynamic delivery properly if your application has not yet been registered on Google Play.
+It is also not very flexible if you want to be able to use dynamic delivery for multiple versions simultaneously. 
 Uploaded bundles also can not be debuggable, making it harder to diagnose problems.
 
 *LocallyDynamic is an attempt at addressing these issues while maintaining good cohesion with the Play Core library.* 

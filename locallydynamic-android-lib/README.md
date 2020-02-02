@@ -4,7 +4,39 @@ exposing the same API as the Play Core library.
 
 Usage
 ---
+```gradle
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // The debug artifact will talk to the LocallyDynamic server
+    debugImplementation 'com.jeppeman.locallydynamic:locallydynamic-debug:0.1'
+    
+    // The release artifact will only delegate to the Play Core library
+    releaseImplementation 'com.jeppeman.locallydynamic:locallydynamic:0.1'     
+}
+```
+### Snapshot
+```gradle
+repositories {
+    maven {
+        url "https://oss.sonatype.org/content/repositories/snapshots/"    
+    }
+}
+
+dependencies {
+    // The debug artifact will talk to the LocallyDynamic server
+    debugImplementation 'com.jeppeman.locallydynamic:locallydynamic-debug:0.2-SNAPSHOT'
+    
+    // The release artifact will only delegate to the Play Core library
+    releaseImplementation 'com.jeppeman.locallydynamic:locallydynamic:0.2-SNAPSHOT'     
+}
+```
+
+### Example
 Add the following to the `build.gradle` of your base application module: 
+
 ```gradle
 buildscript {
     repositories {

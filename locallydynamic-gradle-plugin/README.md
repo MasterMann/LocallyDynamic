@@ -29,7 +29,7 @@ buildscript {
         }
     }
     dependencies {
-        classpath "com.jeppeman.locallydynamic.gradle:plugin:0.1-SNAPSHOT"
+        classpath "com.jeppeman.locallydynamic.gradle:plugin:0.2-SNAPSHOT"
     }
 }
 
